@@ -107,3 +107,19 @@ void hitung_integral(double sudut, double radians, int choice) {
             cout << "Integral untuk fungsi ini belum tersedia." << endl;
     }
 }
+int main() {
+    double sudut, radians; 
+    int pilihin, trigono; 
+    char ulang;
+
+    cout << "=====================================" << endl;
+    cout << "==== Program Fungsi Trigonometri ====" << endl;
+    cout << "=====================================" << endl;
+    
+    cout << endl;
+    cout << "Masukkan sudut dalam derajat: ";
+    cin >> sudut;
+
+    radians = sudut * M_PI / 180.0;
+
+    
