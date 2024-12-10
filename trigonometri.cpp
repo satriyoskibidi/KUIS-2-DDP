@@ -121,4 +121,21 @@ int main() {
 
     radians = sudut * M_PI / 180.0;
 
+    cout << "Pilih jenis operasi: " << endl;
+    cout << "1. Cari nilai trigonometri" << endl;
+    cout << "2. Cari turunan trigonometri" << endl;
+    cout << "3. Cari integral trigonometri" << endl;
+    cout << "Pilihan Anda: ";
+    cin >> pilihin;
     
+    cout << endl;
+    
+    cout << "Pilih fungsi trigonometri: " << endl;
+    cout << "1. Sinus (sin)" << endl;
+    cout << "2. Cosinus (cos)" << endl;
+    cout << "3. Tangen (tan)" << endl;
+    cout << "4. Cotangen (cot)" << endl;
+    cout << "5. Cosecan (csc)" << endl;
+    cout << "6. Secan (sec)" << endl;
+    cout << "Pilihan Anda: ";
+    cin >> trigono;
