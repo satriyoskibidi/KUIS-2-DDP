@@ -87,3 +87,23 @@ void hitung_turunan(double sudut, double radians, int choice) {
             cout << "Pilihan tidak valid." << endl;
     }
 }
+
+void hitung_integral(double sudut, double radians, int choice) {
+    switch (choice) {
+        case 1:
+            cout << "Integral sin(" << sudut << ") adalah -cos(" << sudut << ") + C = " << -cos(radians) << " + C" << endl;
+            break;
+        case 2:
+            cout << "Integral cos(" << sudut << ") adalah sin(" << sudut << ") + C = " << sin(radians) << " + C" << endl;
+            break;
+        case 3:
+            if (fabs(fmod(sudut, 180) - 90) < epsilon) {
+                cout << "Integral tan(" << sudut << ") tidak terdefinisi (infinity)." << endl;
+            } else {
+                cout << "Integral tan(" << sudut << ") adalah -ln|cos(" << sudut << ")| + C = " << -log(fabs(cos(radians))) << " + C" << endl;
+            }
+            break;
+        default:
+            cout << "Integral untuk fungsi ini belum tersedia." << endl;
+    }
+}
