@@ -110,7 +110,6 @@ void hitung_integral(double sudut, double radians, int choice) {
 int main() {
     double sudut, radians; 
     int pilihin, trigono; 
-    char ulang;
 
     cout << "=====================================" << endl;
     cout << "==== Program Fungsi Trigonometri ====" << endl;
