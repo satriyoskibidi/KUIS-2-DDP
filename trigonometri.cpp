@@ -139,3 +139,20 @@ int main() {
     cout << "6. Secan (sec)" << endl;
     cout << "Pilihan Anda: ";
     cin >> trigono;
+
+cout << endl;
+    
+    if (pilihin == 1) {
+        hitung_trigonometri(sudut, radians, trigono);
+    } else if (pilihin == 2) {
+        hitung_turunan(sudut, radians, trigono);
+    } else if (pilihin == 3) {
+        hitung_integral(sudut, radians, trigono);
+    } else {
+        cout << "Pilihan operasi tidak valid." << endl;
+    }
+    cout << endl;
+    
+    cout << "Program selesai. Terima kasih!" << endl;
+    return 0;
+}
